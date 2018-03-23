@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.85rem;
+  margin: 0 auto;
+  font-family: mina, ubuntu, sans-serif;
+  color: #fff;
+  background-color: #000;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-image {
+  height: 100vh;
+  background-image: url(https://source.unsplash.com/6fbX_qHQCP8/5309x3539); /* Photo by Jeremy Bishop on Unsplash */
+  background-size: cover;
+  background-position: center;
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10%;
+  align-items: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  order: 1;
+  flex: 1 1 100%;
+  margin: auto;
+}
+
+.navbar-top {
+  order: 2;
+  flex: 1 1 100%;
+  margin: 10% auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+.header-top img, .header-top a {
+  width: 60px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  margin-left: 10%;
+  font-size: 0.6rem;
+}
+
+.highlight {
+  color: #e82520;
+  text-shadow: #fff;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+.fa-angle-double-down {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  color: #fff;
+}
+
+.fa-angle-double-down:hover {
+  color: #e82520;
+  transition: color 0.3s ease-in-out;
+}
+
+.showcase-container {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;  
+  font-size: 0.5rem;
+}
+
+#showcase, .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project img {
+  width: 80%;
+  margin: auto;
+}
+
+#showcase h1 {
+  width: 80%;
+  margin-bottom: 30px;
+  color: #fff;
+  border-bottom: 1px groove #e82520;
+  padding-bottom: 3px;
+}
