@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;/*
+  border: 0.5px solid red; */
 }
 
 body {
@@ -29,7 +30,11 @@ a {
   color: #fff;
 }
 
-.header-nav-wrapper {
+.header-nav-wrapper,
+.content,
+.showcase-container,
+.about-container,
+footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -41,13 +46,13 @@ a {
   display: flex;
   justify-content: center;
   order: 1;
-  flex: 1 1 100%;
+  flex: auto;
   margin: auto;
 }
 
 .navbar-top {
   order: 2;
-  flex: 1 1 100%;
+  flex: auto;
   margin: 10% auto;
 }
 
@@ -67,8 +72,7 @@ li {
 
 .content {
   position: absolute;
-  top: 50%;
-  margin-left: 10%;
+  top: 55%;
   font-size: 0.6rem;
 }
 
@@ -94,10 +98,8 @@ li {
 }
 
 .showcase-container {
-  margin: 30px auto;
   display: flex;
-  justify-content: center;  
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 #showcase, .project {
@@ -107,15 +109,23 @@ li {
   flex-wrap: wrap;
 }
 
+.project-content {
+  padding: 5px 5px;
+}
+
+.p-content {
+  font-size: 0.85rem;
+}
+
 .project img {
-  width: 80%;
+  width: 100%;
+  display: block;
   margin: auto;
 }
 
-#showcase h1 {
-  width: 80%;
-  margin-bottom: 30px;
-  color: #fff;
+.showcase-container h1, #about-me h1, #contact h1 {
+  width: 100%;
+  margin-bottom: 20px;
   border-bottom: 1px groove #e82520;
   padding-bottom: 3px;
 }
