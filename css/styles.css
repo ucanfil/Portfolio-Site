@@ -9,10 +9,10 @@ body {
   font-size: 0.85rem;
   margin: 0 auto;
   font-family: mina, ubuntu, sans-serif;
-  color: #fff;
-  background-color: #000;
+  color: #e7ebe1;
+  background-color: #191d13;
   line-height: 1.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.75px;
 }
 
 .hero-image {
@@ -27,32 +27,30 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: #e7ebe1;
 }
 
 .header-nav-wrapper,
-.content,
+.intro,
 .showcase-container,
 .about-container,
 footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10%;
+  padding: 5%;
   align-items: center;
 }
 
 .header-top {
   display: flex;
   justify-content: center;
-  order: 1;
-  flex: auto;
+  flex: 1 1 100%;
   margin: auto;
 }
 
 .navbar-top {
-  order: 2;
-  flex: auto;
+  flex: 1 1 100%;
   margin: 10% auto;
 }
 
@@ -70,7 +68,7 @@ li {
   width: 60px;
 }
 
-.content {
+.intro {
   position: absolute;
   top: 55%;
   font-size: 0.6rem;
@@ -78,18 +76,14 @@ li {
 
 .highlight {
   color: #e82520;
-  text-shadow: #fff;
-}
-
-.content h1 {
-  color: #fff;
+  text-shadow: #e7ebe1;
 }
 
 .fa-angle-double-down {
   position: absolute;
   left: 50%;
   bottom: 5%;
-  color: #fff;
+  color: #e7ebe1;
 }
 
 .fa-angle-double-down:hover {
@@ -99,7 +93,7 @@ li {
 
 .showcase-container {
   display: flex;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 #showcase, .project {
@@ -109,8 +103,11 @@ li {
   flex-wrap: wrap;
 }
 
+.project-sections {
+  margin: 10px 0;
+}
 .project-content {
-  padding: 5px 5px;
+  padding: 10px 5px 5px 5px;
 }
 
 .p-content {
@@ -123,9 +120,50 @@ li {
   margin: auto;
 }
 
-.showcase-container h1, #about-me h1, #contact h1 {
+.showcase-container h1, #about-me h1 {
   width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px groove #e82520;
   padding-bottom: 3px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#contact h1 {
+  flex: 1 1 100%;
+  border-bottom: 1px groove #e82520;
+}
+
+.social-links {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: stretch;
+  height: 70px;
+}
+
+.fab {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-note {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .header-top {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 30%;
+  }
+
+  .navbar-top {
+    flex-basis: auto;
+  }
 }
