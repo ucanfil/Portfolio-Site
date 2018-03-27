@@ -30,6 +30,10 @@ a {
   color: #e7ebe1;
 }
 
+p {
+  letter-spacing: 0.4px;
+}
+
 .header-nav-wrapper,
 .intro,
 .showcase-container,
@@ -103,6 +107,10 @@ li {
   flex-wrap: wrap;
 }
 
+.project {
+  margin-top: 10px;
+}
+
 .project-sections {
   margin: 10px 0;
 }
@@ -112,6 +120,7 @@ li {
 
 .p-content {
   font-size: 0.85rem;
+  margin-top: 5px;
 }
 
 .project img {
