@@ -5,6 +5,10 @@
   border: 0.5px solid red; */
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-size: 0.85rem;
   margin: 0 auto;
@@ -214,6 +218,14 @@ h2 {
 }
 
 @media screen and (min-width: 651px) and (max-width: 950px) {
+  html {
+    font-size: 110%;
+  }
+
+  .intro {
+    font-size: 0.7rem;
+  }
+
   .project-sections {
     max-width: 49%;
   }
@@ -224,6 +236,13 @@ h2 {
 }
 
 @media screen and (min-width: 951px) {
+  html {
+    font-size: 115%;
+  }
+
+  .intro {
+    font-size: 0.85rem;
+  }
   .project-sections {
     max-width: 32.5%;
     position: relative;
@@ -240,7 +259,7 @@ h2 {
   .project-sections:hover .project-content {
     opacity: 1;
     padding: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     font-weight: 700;
   }
 
