@@ -24,6 +24,7 @@ body {
 
 .section-headings {
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 a {
@@ -31,6 +32,12 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   color: #e7ebe1;
+}
+
+.navbar-top a:hover, .social-links a:hover {
+  color: #e82520;
+  border-bottom: 2px solid #e82520;
+  transition: all 0.3s ease-in-out;
 }
 
 p {
@@ -45,20 +52,23 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
   align-items: center;
+  margin: 0 auto;
+  max-width: 950px;
 }
 
 .header-top {
   display: flex;
   justify-content: center;
   flex: 1 1 100%;
-  margin: auto;
+  margin-top: 20px;
 }
 
 .navbar-top {
   flex: 1 1 100%;
-  margin: 10% auto;
+  margin-top: 20px;
 }
 
 ul {
@@ -76,9 +86,14 @@ li {
 }
 
 .intro {
-  position: absolute;
-  top: 55%;
+  margin-top: 45vh;
+  width: 100%;
   font-size: 0.6rem;
+}
+
+.intro h1 {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .highlight {
@@ -101,6 +116,9 @@ li {
 .showcase-container {
   display: flex;
   font-size: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #showcase, .p-figure {
@@ -108,14 +126,19 @@ li {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 
 .project-sections {
   flex-grow: 1;
-  margin: 10px 0;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
+
 .project-content {
   padding: 10px 5px 5px 5px;
+  min-height: 200px;
 }
 
 .p-content {
@@ -123,14 +146,12 @@ li {
   margin-top: 5px;
 }
 
-.p-figure {
-  margin-top: 10px;
-}
-
 .p-figure img {
   width: 100%;
   display: block;
   margin: auto;
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 
 .showcase-container h1, #about-me h1 {
@@ -145,11 +166,15 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   flex-basis: 100%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #contact h1 {
   flex: 1 1 100%;
   border-bottom: 1px groove #e82520;
+  order: -1;
 }
 
 h2 {
@@ -158,19 +183,22 @@ h2 {
 
 .social-links {
   display: flex;
-  flex-basis: 100%;
+  width: 160px;
+  flex-grow: 2 0 auto;
   justify-content: center;
   align-items: stretch;
   height: 70px;
+  order: 2;
+}
+
+.footer-note {
+  flex-grow: 1;
+  order: 1;
 }
 
 .fab {
   padding: 1rem;
   font-size: 1.5rem;
-}
-
-.footer-note {
-  flex-basis: 100%;
 }
 
 @media screen and (min-width: 650px) {
@@ -182,5 +210,51 @@ h2 {
 
   .navbar-top {
     flex-basis: auto;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 950px) {
+  .project-sections {
+    max-width: 49%;
+  }
+
+  #showcase {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .project-sections {
+    max-width: 32.5%;
+    position: relative;
+  }
+
+  .project-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: auto;
+  }
+
+  .project-sections:hover .project-content {
+    opacity: 1;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+  }
+
+  .project-sections:hover .p-figure {
+    z-index: -10;
+    background-color: #191d13;
+    border: 1px solid #e82520;
+  }
+
+  .project-sections:hover img {
+    z-index: -11;
+  }
+
+  #showcase {
+    justify-content: space-between;
   }
 }
