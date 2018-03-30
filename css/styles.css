@@ -21,7 +21,8 @@ body {
 
 .hero-image {
   height: 100vh;
-  background-image: url(../img/hero-image.jpg); /* Photo by Jeremy Bishop on Unsplash */
+  background-image: url(../img/hero-image-medium_1x.jpg); /* Photo by Jeremy Bishop on Unsplash */
+  background-image: image-set(url(../img/hero-image-medium_1x.jpg) 1x, url(../img/hero-image-medium_2x.jpg) 2x);
   background-size: cover;
   background-position: center;
 }
@@ -244,7 +245,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 951px) {
+@media screen and (min-width: 950px) {
   html {
     font-size: 115%;
   }
