@@ -167,7 +167,7 @@ li {
   border-radius: 5px;
 }
 
-.showcase-container h1, #about-me h1 {
+.showcase-container h2, #about-me h2 {
   width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px groove #e82520;
@@ -184,7 +184,7 @@ li {
   margin-bottom: 20px;
 }
 
-#contact h1 {
+#contact h2 {
   flex: 1 1 100%;
   border-bottom: 1px groove #e82520;
   order: -1;
@@ -277,7 +277,8 @@ h2 {
     opacity: 1;
     padding: 20px;
     transition: opacity 0.3s ease-in-out;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 0.7rem;
   }
 
   .project-sections:hover .p-figure {
