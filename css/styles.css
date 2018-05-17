@@ -275,12 +275,14 @@ h2 {
     transition: opacity 0.3s ease-in-out;
     font-weight: 400;
     font-size: 0.7rem;
+    border: 1px solid #e82520;
+    border-radius: 5px;
+    background-color: #191d13;
   }
 
   .project-sections:hover .p-figure {
     z-index: -10;
     background-color: #191d13;
-    border: 1px solid #e82520;
   }
 
   .project-sections:hover img {
