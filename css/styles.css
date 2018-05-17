@@ -206,7 +206,7 @@ h2 {
   order: 1;
 }
 
-.fab {
+.fab, .fas {
   padding: 1rem;
   font-size: 1.5rem;
 }
