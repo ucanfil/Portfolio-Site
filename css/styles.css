@@ -40,10 +40,10 @@ body {
 
 a {
   color: #e7ebe1;
+  text-decoration: none;
 }
 
 li > a {
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
