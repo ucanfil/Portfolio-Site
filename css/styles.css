@@ -39,10 +39,13 @@ body {
 }
 
 a {
+  color: #e7ebe1;
+}
+
+li > a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #e7ebe1;
 }
 
 .navbar-top a:hover, .social-links a:hover {
@@ -279,6 +282,7 @@ h2 {
     border: 1px solid #e82520;
     border-radius: 5px;
     background-color: #191d13;
+    z-index: 10;
   }
 
   .project-sections:hover .p-figure {
